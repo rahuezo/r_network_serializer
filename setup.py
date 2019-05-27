@@ -9,6 +9,6 @@ setup(
     author='Rudy Huezo',
     author_email='rahuezo@ucdavis.edu',
     license='MIT',
-    packages=['r_network_serializer', 'r_network_serializer.rnetwork', 'r_network_serializer.serialize'],
+    packages=['r_network_serializer'],
     zip_safe=False
 )
