@@ -3,9 +3,11 @@ from serialize import to_listvector, rserialize
 
 import tkFileDialog as fd
 
-fins = fd.askopenfilenames(title="Choose networks")
+fins = fd.askopenfiles(title="Choose networks")
 
 networks = [RNetwork(f).serialize_ready for f in fins]
+
+print networks
 
 net_listvector = to_listvector(networks)
 
