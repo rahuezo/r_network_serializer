@@ -17,7 +17,7 @@ class RNetwork:
 
     def __init__(self, matrix_file):
         self.matrix_file = matrix_file
-        self.name = self.matrix_file.name
+        self.name = self.matrix_file.name.lower().replace(".csv", "")
         self.network = self.load_matrix()
         self.serialize_ready = (self.name, self.network)
 
